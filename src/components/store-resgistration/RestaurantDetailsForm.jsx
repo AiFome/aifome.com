@@ -19,7 +19,7 @@ import CustomMultiSelectTags from '../custom-multi-select-tags/CustomMultiSelect
 import FastfoodIcon from '@mui/icons-material/Fastfood'
 import StoreIcon from '@mui/icons-material/Store'
 import { useGetCuisines } from '@/hooks/react-query/cuisines/useGetCuisines'
-import MultiSelectTypedInput from '../ MultiSelectTypedInput/ MultiSelectTypedInput'
+import MultiSelectTypedInput from '../MultiSelectTypedInput/MultiSelectTypedInput'
 import SubjectIcon from '@mui/icons-material/Subject'
 const RestaurantDetailsForm = ({
     RestaurantJoinFormik,

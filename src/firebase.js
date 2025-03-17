@@ -8,13 +8,13 @@ import {
 import { getAuth } from 'firebase/auth'
 
 const firebaseConfig = {
-    apiKey: '',
-    authDomain: '',
-    projectId: '',
-    storageBucket: '',
-    messagingSenderId: '',
-    appId: '',
-    measurementId: '',
+    apiKey: 'AIzaSyBS8dvy1QlQqEIlz3cuq705hQSM1lNcQa8',
+    authDomain: 'ecommerce-2ad96.firebaseapp.com',
+    projectId: 'ecommerce-2ad96',
+    storageBucket: 'ecommerce-2ad96.firebasestorage.app',
+    messagingSenderId: '191820395272',
+    appId: '1:191820395272:web:57d5b5e6199caca77d32bd',
+    measurementId: 'G-HYB38TZPSC',
 }
 const firebaseApp = !getApps().length ? initializeApp(firebaseConfig) : getApp()
 const messaging = (async () => {

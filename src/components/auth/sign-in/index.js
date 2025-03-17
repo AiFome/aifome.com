@@ -146,7 +146,7 @@ const SignInPage = ({
                     localStorage.setItem('userDatafor', JSON.stringify(values))
                 }
                 formSubmitHandler({ ...values, login_type: 'manual' })
-            } catch (err) {}
+            } catch (err) { }
         },
     })
     const otpLoginFormik = useFormik({
@@ -161,7 +161,7 @@ const SignInPage = ({
         onSubmit: async (values, helpers) => {
             try {
                 formSubmitHandler({ ...values, login_type: 'otp' })
-            } catch (err) {}
+            } catch (err) { }
         },
     })
     const otpHandleChange = (value) => {
@@ -259,6 +259,7 @@ const SignInPage = ({
         }
     }
     const handleClick = () => {
+        console.log("Sfsf");
         window.open('/terms-and-conditions')
     }
     const { mutate: otpVerifyMutate, isLoading: isLoadingOtpVerifiyAPi } =
@@ -682,8 +683,8 @@ const SignInPage = ({
                             />
                         </CustomStackFullWidth>
                         {state.activeLoginType?.social &&
-                        !state.activeLoginType?.manual &&
-                        !state.activeLoginType?.otp ? (
+                            !state.activeLoginType?.manual &&
+                            !state.activeLoginType?.otp ? (
                             <Typography textAlign="center">
                                 {t(`Welcome to ${global?.business_name}`)}
                             </Typography>
